@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="codex_backup은 개인용 Mac의 Codex 자료를 본인의 Google Drive에 백업하고 복구하는 프로그램입니다.">
+  <title>codex_backup — 개인용 백업 및 복구</title>
+  <style>
+    :root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", sans-serif; color: #202c35; background: #f5f7fa; }
+    body { margin: 0; padding: 48px 20px; line-height: 1.8; }
+    main { max-width: 720px; margin: auto; padding: 36px; background: white; border: 1px solid #dce3e9; border-radius: 14px; }
+    h1 { margin: 0 0 8px; line-height: 1.3; font-size: 2rem; }
+    h2 { margin-top: 30px; font-size: 1.2rem; }
+    p, li { word-break: keep-all; overflow-wrap: anywhere; }
+    .subtitle { color: #52616f; margin-top: 0; }
+    a { color: #145ca4; text-underline-offset: 3px; }
+    footer { margin-top: 30px; padding-top: 18px; border-top: 1px solid #e5e9ee; font-size: .9rem; color: #52616f; }
+    @media (max-width: 480px) { body { padding: 20px 12px; } main { padding: 24px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>codex_backup</h1>
+    <p class="subtitle">개인용 Mac 백업 및 복구</p>
+    <p>codex_backup은 개인이 소유한 Mac의 Codex 작업 자료와 대화 기록을 백업하고 복구하기 위한 개인용 프로그램입니다. 사용자가 승인한 본인의 Google Drive 폴더에 암호화된 백업을 저장합니다.</p>
+    <h2>작동 방식</h2>
+    <ul>
+      <li>Mac에서 백업 대상 자료를 수집하고, 인증정보로 식별된 값을 백업 사본에서 제외하거나 가립니다.</li>
+      <li>restic으로 백업 데이터를 암호화하고, rclone을 통해 Google Drive에 전송합니다.</li>
+      <li>필요할 때 백업을 별도 폴더에 복구하고 파일의 무결성을 확인합니다.</li>
+    </ul>
+    <p>Google 계정 연결은 Google OAuth를 이용합니다. 프로그램은 개인용으로 운영하며 자체 외부 서버, 광고 또는 분석 서비스를 사용하지 않습니다.</p>
+    <p><a href="privacy.html">개인정보 처리방침</a>에서 Google Drive 권한, 저장 위치, 보관 및 권한 철회 방법을 확인할 수 있습니다.</p>
+    <footer>이 프로그램은 개인이 운영하는 백업 도구이며 Google 또는 OpenAI의 공식 제품이 아닙니다.</footer>
+  </main>
+</body>
+</html>
